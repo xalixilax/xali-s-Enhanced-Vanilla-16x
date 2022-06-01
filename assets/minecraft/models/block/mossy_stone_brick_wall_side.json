@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/template_wall_side_bricks",
+  "textures": {
+    "wall": "minecraft:block/walls/mossy_stone_bricks_wall",
+	"opposite": "minecraft:block/walls/mossy_stone_bricks_wall_opposite",
+	"end": "minecraft:block/walls/mossy_stone_bricks_wall_end"
+  }
+}

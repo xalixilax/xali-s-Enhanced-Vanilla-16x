@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "minecraft:block/dark_oak_planks",
+    "side": "optifine/ctm/bookshelf/dark_oak/empty_dark_oak_bookshelf"
+  }
+}

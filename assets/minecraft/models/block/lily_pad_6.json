@@ -1,0 +1,69 @@
+{
+	"credit": "Made with Blockbench",
+	"ambientocclusion": false,
+	"textures": {
+		"1": "block/lily_pad_flower",
+		"2": "block/lily_pad_root",
+		"particle": "block/lily_pad",
+		"texture": "block/lily_pad"
+	},
+	"elements": [
+		{
+			"from": [0, 0.25, 0],
+			"to": [16, 0.25, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 0, 0]},
+			"faces": {
+				"up": {"uv": [16, 0, 0, 16], "texture": "#texture", "tintindex": 0},
+				"down": {"uv": [16, 16, 0, 0], "texture": "#texture", "tintindex": 0}
+			}
+		},
+		{
+			"from": [8.2, 0, 6],
+			"to": [8.2, 5, 13],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8.2, 0, 10.5]},
+			"faces": {
+				"east": {"uv": [5, 6, 12, 11], "texture": "#1"},
+				"west": {"uv": [5, 6, 12, 11], "texture": "#1"}
+			}
+		},
+		{
+			"from": [3.7, 0, 9],
+			"to": [10.7, 5, 9],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8.2, 0, 9]},
+			"faces": {
+				"north": {"uv": [5, 6, 12, 11], "texture": "#1"},
+				"south": {"uv": [5, 6, 12, 11], "texture": "#1"}
+			}
+		},
+		{
+			"from": [8.2, -16, 7],
+			"to": [8.2, 0, 12],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8.2, 0, 10.5]},
+			"faces": {
+				"east": {"uv": [0, 0, 5, 16], "texture": "#2"},
+				"west": {"uv": [0, 0, 5, 16], "texture": "#2"}
+			}
+		},
+		{
+			"from": [4.7, -16, 9],
+			"to": [9.7, 0, 9],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8.2, 0, 9]},
+			"faces": {
+				"north": {"uv": [0, 0, 5, 16], "texture": "#2"},
+				"south": {"uv": [0, 0, 5, 16], "texture": "#2"}
+			}
+		}
+	],
+	"groups": [0,
+		{
+			"name": "group",
+			"origin": [8, 8, 8],
+			"children": []
+		}, 1, 2,
+		{
+			"name": "lily_pad_5",
+			"origin": [8, 8, 8],
+			"children": [3, 4]
+		}
+	]
+}

@@ -1,0 +1,13 @@
+{
+    "variants": {
+        "": [ { "model": "block/grass_path", "weight":100 }
+,{ "model": "block/grass_path/grass_path_0", "weight":1 }
+,{ "model": "block/grass_path/grass_path_1", "weight":1 }
+,{ "model": "block/grass_path/grass_path_2", "weight":1 }
+,{ "model": "block/grass_path/grass_path_3", "weight":1 }
+,{ "model": "block/grass_path/grass_path_4", "weight":1 }
+,{ "model": "block/grass_path/grass_path_5", "weight":2 }
+,{ "model": "block/grass_path/grass_path_6", "weight":2 }
+,{ "model": "block/grass_path/grass_path_7", "weight":2 }
+ ]   }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "enhanced_vanilla",
+  "version": 6,
+  "capabilities": ["FileFilter", "DirFilter"],
+  "conf": {
+    "bushyLeaves": true,
+    "chainToRope": false,
+    "fences": [
+      "planks",
+      "log",
+      "strippedLog"
+    ]
+  }
+}

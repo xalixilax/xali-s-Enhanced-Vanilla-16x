@@ -1,0 +1,7 @@
+{
+    "credit": "Modified by xalixilax",
+	"ambientocclusion": false,
+    "textures": {
+        "particle": "block/iron_bars"
+    }
+}

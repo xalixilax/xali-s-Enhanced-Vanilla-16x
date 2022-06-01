@@ -1,0 +1,14 @@
+{
+    "variants": {
+        "": [ { "model": "block/dirt", "weight":300 }
+,{ "model": "block/dirt/dirt_0", "weight":2 }
+,{ "model": "block/dirt/dirt_1", "weight":2 }
+,{ "model": "block/dirt/dirt_2", "weight":2 }
+,{ "model": "block/dirt/dirt_3", "weight":2 }
+,{ "model": "block/dirt/dirt_4", "weight":2 }
+,{ "model": "block/dirt/dirt_5", "weight":1 }
+,{ "model": "block/dirt/dirt_6", "weight":1 }
+,{ "model": "block/dirt/dirt_7", "weight":1 }
+,{ "model": "block/dirt/dirt_9", "weight":1 }
+ ]   }
+}

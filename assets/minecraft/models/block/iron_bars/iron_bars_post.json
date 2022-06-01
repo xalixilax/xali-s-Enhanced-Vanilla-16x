@@ -1,0 +1,32 @@
+{
+	"credit": "Created by xalixilax",
+	"parent": "block/block",
+	"textures": {
+		"chains": "block/chains",
+		"particle": "block/chains"
+	},
+	"elements": [
+		{
+			"name": "chains 45",
+			"from": [8, -2, 6.5],
+			"to": [8, 18, 9.5],
+			"shade": false,
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"east": {"uv": [8, 2.5, 9.5, 13.5], "texture": "#chains"},
+				"west": {"uv": [8, 2.5, 9.5, 13.5], "texture": "#chains"}
+			}
+		},
+		{
+			"name": "chains -45",
+			"from": [6.5, 0, 8],
+			"to": [9.5, 16, 8],
+			"shade": false,
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [6, 3.5, 7.5, 12.5], "texture": "#chains"},
+				"south": {"uv": [6, 3.5, 7.5, 12.5], "texture": "#chains"}
+			}
+		}
+	]
+}

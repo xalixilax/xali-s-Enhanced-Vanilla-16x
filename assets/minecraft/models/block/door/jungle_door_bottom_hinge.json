@@ -1,0 +1,7 @@
+{
+    "parent": "block/door/door_bottom_rh",
+    "textures": {
+        "bottom": "block/jungle_door_bottom_rh",
+		"side": "block/door/jungle_door_side"
+    }
+}

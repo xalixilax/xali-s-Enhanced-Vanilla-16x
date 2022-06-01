@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/tinted_cross_overlay",
+  "textures": {
+    "cross": "minecraft:block/grass"
+  }
+}

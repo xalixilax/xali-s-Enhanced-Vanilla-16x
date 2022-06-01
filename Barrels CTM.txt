@@ -1,0 +1,79 @@
+################################################################################
+#
+# Before we start, make sure your config are properly set
+# ESC/Option/Video Setting/Quality/Connected Textures: Fancy
+# ESC/Option/Video Setting/Quality/Custom Item: ON
+#
+# FOR BOOKSHELF YOU ALSO NEED TO RENAME A BARREL!!!
+# THIS DOES NOT WORK ON BOOKSHELF!!!
+#
+################################################################################
+
+Here's a complete guide for the custom barrel textures. How it work is by renaming 
+a barrel inside an anvil with the proper name. It support multiple layer and it 
+is possible to stack multiple different texture over each other. Everything is case
+insensitive so you don't have to worry about stuff like "Barre0l" or even "bARreL"
+if it is you thing.
+
+
+There is currently 2 format that is used:
+Bookshelf	<empty> <wood type> bookshelf
+Barrels		<hoops type> <wood type> barrel <content>
+
+Here is some example of what it might look for bookshelfs: 
+Acacia Bookshelf
+SPRUCE Bookshelf
+birch bookshelf
+CrImSoN BoOKsHeLf
+
+Here is some example of what it might look for barrels: 
+Warped Barrel
+crimson barrel white
+COPPER BARREL APPLE
+irON jUNgle BARRel salMON
+
+As you can see you can write it pretty much however you want as long as you 
+spell it correctly
+
+
+WOOD TYPE
+-------------
+acacia
+jungle
+oak
+spruce
+birch
+dark oak
+crimson
+warped
+moonshine
+
+HOOPS TYPE
+-------------
+iron
+gold
+copper
+
+CONTENT
+-------------
+apple
+blackHereblue
+brown
+carrot
+coal
+cod
+cyan
+gray 
+green
+light blue
+light gray
+lime
+magenta
+orange
+pink
+potato
+purple
+red
+salmon
+white
+yellow

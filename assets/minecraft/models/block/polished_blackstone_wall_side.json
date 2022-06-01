@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/template_wall_side_bricks",
+  "textures": {
+    "wall": "minecraft:block/walls/polished_blackstone_wall",
+	"opposite": "minecraft:block/walls/polished_blackstone_wall_opposite",
+	"end": "minecraft:block/walls/polished_blackstone_bricks_wall_end"
+  }
+}

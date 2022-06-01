@@ -1,0 +1,21 @@
+{
+    "variants": {
+        "": [ { "model": "block/cobblestone", "weight":10 }
+,{ "model": "block/cobblestone/cobblestone_1", "weight":10 }
+,{ "model": "block/cobblestone/cobblestone_2", "weight":10 }
+,{ "model": "block/cobblestone/cobblestone_3", "weight":10 }
+,{ "model": "block/cobblestone/cobblestone_4", "weight":10 }
+,{ "model": "block/cobblestone/cobblestone_5", "weight":10 }
+,{ "model": "block/cobblestone/cobblestone_6", "weight":10 }
+,{ "model": "block/cobblestone/cobblestone_7", "weight":10 }
+,{ "model": "block/cobblestone/cobblestone_8", "weight":5 }
+,{ "model": "block/cobblestone/cobblestone_9", "weight":10 }
+,{ "model": "block/cobblestone/cobblestone_10", "weight":1 }
+,{ "model": "block/cobblestone/cobblestone_11", "weight":1 }
+,{ "model": "block/cobblestone/cobblestone_12", "weight":1 }
+,{ "model": "block/cobblestone/cobblestone_13", "weight":1 }
+,{ "model": "block/cobblestone/cobblestone_14", "weight":1 }
+,{ "model": "block/cobblestone/cobblestone_15", "weight":1 }
+,{ "model": "block/cobblestone/cobblestone_16", "weight":1 }
+ ]   }
+}

@@ -1,0 +1,7 @@
+{
+    "parent": "block/trapdoor/template_orientable_trapdoor_top",
+    "textures": {
+        "texture": "block/acacia_trapdoor",
+		"side": "block/trapdoor/acacia_trapdoor_side"
+    }
+}

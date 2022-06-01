@@ -1,0 +1,7 @@
+{
+    "parent": "block/door/door_bottom_rh",
+    "textures": {
+        "bottom": "block/birch_door_bottom_rh",
+		"side": "block/door/birch_door_side"
+    }
+}
