@@ -1,0 +1,12 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "file": "xalixilax:font/icons.png",
+            "ascent": 7,
+            "chars": [
+                "\u0243\u0244\u0248\u0249\u024a\u024b\u024c\u024d\u024e"
+            ]
+        }
+    ]
+}
