@@ -32,7 +32,7 @@ jobs:
           curseforge-id: 513425
           curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
 
-          files-primary: build/pack.zip
+          files-primary: pack.zip
 
           name: xali's Enhanced Vanilla v1.10.0
           version: v1.10.0
