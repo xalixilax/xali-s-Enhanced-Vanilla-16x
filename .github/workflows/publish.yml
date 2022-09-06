@@ -1,0 +1,21 @@
+on: [push]
+jobs:
+  build:
+    steps:
+      - uses: Kir-Antipov/mc-publish@v3.2
+        with:
+          modrinth-id: Srw5RQ6k
+          modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
+
+          curseforge-id: 513425
+          curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
+
+          name: xali's Enhanced Vanilla v1.10.0
+          version: v1.10.0
+          version-type: release
+          changelog-file: CHANGELOG.md
+
+          game-versions: |
+            1.19.2
+            1.19.1
+            1.19
