@@ -20,10 +20,6 @@ jobs:
         with:
           tag_name: action-v${{ github.run_number }}
           files: pack.zip
-  release:
-    runs-on: ubuntu-latest
-    needs: packsquash
-    steps:
       - uses: Kir-Antipov/mc-publish@v3.2
         with:
           modrinth-id: Srw5RQ6k
