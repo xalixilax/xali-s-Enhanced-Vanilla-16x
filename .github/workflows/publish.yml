@@ -1,7 +1,28 @@
+name: Optimize resource pack
 on: [push]
 jobs:
-  build:
+  packsquash:
+    name: Optimize resource pack
     runs-on: ubuntu-latest
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 # A non-shallow repository clone is required
+      - name: Run PackSquash
+        uses: ComunidadAylas/PackSquash-action@v3
+      - name: Download optimized pack
+        uses: actions/download-artifact@v3
+        with:
+          name: Optimized pack
+      - name: Tag and create release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: action-v${{ github.run_number }}
+          files: pack.zip
+  release:
+    runs-on: ubuntu-latest
+    needs: packsquash
     steps:
       - uses: Kir-Antipov/mc-publish@v3.2
         with:
@@ -10,6 +31,8 @@ jobs:
 
           curseforge-id: 513425
           curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
+
+          files-primary: build/pack.zip
 
           name: xali's Enhanced Vanilla v1.10.0
           version: v1.10.0
