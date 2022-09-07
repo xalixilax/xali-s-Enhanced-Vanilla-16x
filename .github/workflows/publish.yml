@@ -1,32 +1,52 @@
 name: Optimize resource pack
-on: [push]
+
+on:
+  push:
+    tags:
+      - "v*"
+
 jobs:
   packsquash:
-    name: Optimize resource pack
     runs-on: ubuntu-latest
+
     steps:
       - name: Clone repository
         uses: actions/checkout@v3
         with:
           fetch-depth: 0 # A non-shallow repository clone is required
-      - name: Run PackSquash
-        uses: ComunidadAylas/PackSquash-action@v3
-      - name: Download optimized pack
-        uses: actions/download-artifact@v3
+
+      - name: Make Optimized Pack
+        uses: ComunidadAylas/PackSquash-action@master
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          allow_optifine_mod: true
+          never_store_squash_times: true
+          path: ./
+
+      - name: DownloadArtifact Optimized Pack
+        uses: actions/download-artifact@v2
         with:
           name: Optimized pack
-      - name: Tag and create release
-        uses: softprops/action-gh-release@v1
+          path: ./
+
+      - name: Rename Optimized Pack
+        run: |
+          mv ./pack.zip "xali's Enhanced Vanilla.zip"
+
+      - name: Delete Artifact
+        uses: geekyeggo/delete-artifact@v1
         with:
-          tag_name: action-v${{ github.run_number }}
-          files: pack.zip
-      - uses: Kir-Antipov/mc-publish@v3.2
+          name: |
+            Optimized pack
+
+      - name: Publish
+        uses: Kir-Antipov/mc-publish@latest
         with:
           modrinth-id: Srw5RQ6k
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
           curseforge-id: 513425
           curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
-          files-primary: pack.zip
+          files-primary: xali's Enhanced Vanilla.zip
           name: xali's Enhanced Vanilla v1.10.0
           version: v1.10.0
           version-type: release
