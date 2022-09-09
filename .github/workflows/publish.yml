@@ -31,7 +31,7 @@ jobs:
 
       - name: Rename Optimized Pack
         run: |
-          mv ./pack.zip "xali's Enhanced Vanilla.zip"
+          mv ./pack.zip "xali's Enhanced Vanilla v1.10.1.zip"
 
       - name: Delete Artifact
         uses: geekyeggo/delete-artifact@v1
@@ -47,8 +47,8 @@ jobs:
           curseforge-id: 513425
           curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
           files-primary: xali's Enhanced Vanilla.zip
-          name: xali's Enhanced Vanilla v1.10.0
-          version: v1.10.0
+          name: xali's Enhanced Vanilla v1.10.1
+          version: v1.10.1
           version-type: release
           changelog-file: CHANGELOG.md
           game-versions: |

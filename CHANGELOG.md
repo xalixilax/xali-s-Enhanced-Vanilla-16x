@@ -1,2 +1,2 @@
-- Added support for 1.19
-- Trying out publish
+# Fix
+- Github Action wasn't configured properly pushing an empty optifine folder.
