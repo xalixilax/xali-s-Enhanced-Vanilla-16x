@@ -46,7 +46,7 @@ jobs:
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
           curseforge-id: 513425
           curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
-          files-primary: xali's Enhanced Vanilla.zip
+          files-primary: xali's Enhanced Vanilla v1.10.3.zip
           name: xali's Enhanced Vanilla v1.10.3
           version: v1.10.3
           version-type: release
