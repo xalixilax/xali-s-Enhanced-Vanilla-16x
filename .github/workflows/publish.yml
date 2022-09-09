@@ -40,7 +40,7 @@ jobs:
             Optimized pack
 
       - name: Publish
-        uses: Kir-Antipov/mc-publish@latest
+        uses: Kir-Antipov/mc-publish@Latest
         with:
           modrinth-id: Srw5RQ6k
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
