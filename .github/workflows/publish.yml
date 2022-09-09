@@ -31,7 +31,7 @@ jobs:
 
       - name: Rename Optimized Pack
         run: |
-          mv ./pack.zip "xali's Enhanced Vanilla v1.10.1.zip"
+          mv ./pack.zip "xali's Enhanced Vanilla v1.10.3.zip"
 
       - name: Delete Artifact
         uses: geekyeggo/delete-artifact@v1
@@ -40,15 +40,15 @@ jobs:
             Optimized pack
 
       - name: Publish
-        uses: Kir-Antipov/mc-publish@Latest
+        uses: Kir-Antipov/mc-publish@v3.2
         with:
           modrinth-id: Srw5RQ6k
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
           curseforge-id: 513425
           curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
           files-primary: xali's Enhanced Vanilla.zip
-          name: xali's Enhanced Vanilla v1.10.1
-          version: v1.10.1
+          name: xali's Enhanced Vanilla v1.10.3
+          version: v1.10.3
           version-type: release
           changelog-file: CHANGELOG.md
           game-versions: |
