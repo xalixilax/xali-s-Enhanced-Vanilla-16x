@@ -1,0 +1,59 @@
+{
+	"textureSize": [64, 32],
+	"models": [
+		{
+			"part": "head",
+			"id": "head",
+			"invertAxis": "xy",
+			"translate": [0, -9, 4],
+			"boxes": [
+				{"coordinates": [-2, 9, -6, 4, 6, 3], "textureOffset": [0, 0]}
+			],
+			"submodels": [
+				{
+					"id": "mushroom",
+					"invertAxis": "xy",
+					"translate": [-1, 13, -9.5],
+					"boxes": [
+						{"coordinates": [0, 1, 3, 0, 5, 5], "textureOffset": [0, 18]},
+						{"coordinates": [-2.5, 1, 5.5, 5, 5, 0], "textureOffset": [0, 23]}
+					]
+				}
+			]
+		},
+		{
+			"part": "body",
+			"id": "body",
+			"invertAxis": "xy",
+			"translate": [0, -8, 0],
+			"submodels": [
+				{
+					"id": "rotation",
+					"invertAxis": "xy",
+					"translate": [0, 8, 0],
+					"rotate": [-90, 0, 0],
+					"boxes": [
+						{"coordinates": [-3, -4, -3, 6, 8, 6], "textureOffset": [0, 9]}
+					],
+					"submodels": [
+						{
+							"id": "mushroom2",
+							"invertAxis": "xy",
+							"translate": [1, 5, 1],
+							"rotate": [90, 0, 0],
+							"boxes": [
+								{"coordinates": [0, 1, 3, 0, 5, 5], "textureOffset": [0, 18]},
+								{"coordinates": [-2.5, 1, 5.5, 5, 5, 0], "textureOffset": [0, 23]}
+							]
+						}
+					]
+				}
+			],
+			"animations": [
+				{
+					"rotation.rx": "0"
+				}
+			]
+		}
+	]
+}
