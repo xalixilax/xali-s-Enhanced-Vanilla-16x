@@ -31,7 +31,7 @@ jobs:
 
       - name: Rename Optimized Pack
         run: |
-          mv ./pack.zip "xali's Enhanced Vanilla v1.11.0.zip"
+          mv ./pack.zip "xali's Enhanced Vanilla v1.11.1.zip"
 
       - name: Delete Artifact
         uses: geekyeggo/delete-artifact@v1
@@ -46,12 +46,13 @@ jobs:
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
           curseforge-id: 513425
           curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
-          files-primary: xali's Enhanced Vanilla v1.11.0.zip
-          name: xali's Enhanced Vanilla v1.11.0
-          version: v1.11.0
+          files-primary: xali's Enhanced Vanilla v1.11.1.zip
+          name: xali's Enhanced Vanilla v1.11.1
+          version: v1.11.1
           version-type: release
           changelog-file: CHANGELOG.md
           game-versions: |
+            1.19.4
             1.19.3
             1.19.2
             1.19.1
@@ -62,12 +63,21 @@ jobs:
             1.17.1
             1.17
             1.16.5
+            1.16.4
+            1.16.3
+            1.16.2
+            1.16.1
             1.16
             1.15.2
+            1.15.1
             1.15
             1.14.4
+            1.14.3
+            1.14.2
+            1.14.1
             1.14
             1.13.2
+            1.13.1
             1.13
           loaders: |
             minecraft
