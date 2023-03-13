@@ -44,15 +44,14 @@ jobs:
         with:
           modrinth-id: Srw5RQ6k
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
-          curseforge-id: 513425
-          curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
+          # curseforge-id: 513425
+          # curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
           files-primary: xali's Enhanced Vanilla v1.11.1.zip
           name: xali's Enhanced Vanilla v1.11.1
           version: v1.11.1
           version-type: release
           changelog-file: CHANGELOG.md
           game-versions: |
-            1.19.4
             1.19.3
             1.19.2
             1.19.1
