@@ -58,7 +58,7 @@ jobs:
 
       - uses: actions/upload-artifact@v3
         with:
-          name: ${{ steps.info.outputs.package }}
+          name: ${{ steps.info.outputs.name }} v${{ steps.info.outputs.version }}
           path: ${{ steps.info.outputs.package }}.zip
 
       - name: Publish
