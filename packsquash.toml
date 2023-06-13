@@ -1,5 +1,3 @@
-name = "xali's Enhanced Vanilla"
-version = "1.11.2"
 pack_directory = 'src'
 output_file_path = 'build/output.zip'
 recompress_compressed_files = true
