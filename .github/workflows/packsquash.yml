@@ -47,7 +47,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           artifact_name: ${{ steps.info.outputs.package }}
-          options: options_file = packsquash.toml
+          options: packsquash.toml
 
       - name: Rename Optimized Pack
         run: |
