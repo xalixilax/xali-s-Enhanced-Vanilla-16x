@@ -1,0 +1,13 @@
+name = "xali's Enhanced Vanilla"
+version = "1.11.2"
+pack_directory = 'src'
+output_file_path = 'build/output.zip'
+recompress_compressed_files = true
+zip_compression_iterations = 9
+zip_spec_conformance_level = 'disregard'
+automatic_minecraft_quirks_detection = true
+work_around_minecraft_quirks = ['java8_zip_parsing']
+allow_mods = ['OptiFine']
+validate_pack_metadata_file = true
+ignore_system_and_hidden_files = true
+never_store_squash_times = true
