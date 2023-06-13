@@ -26,10 +26,10 @@ jobs:
       - name: Prepare environments
         id: info
         run: |
-          eval "$(tombl -e name=name pack.toml)"
+          eval "$(tombl -e name=name packsquash.toml)"
           echo "name=$name" >> $GITHUB_OUTPUT
 
-          eval "$(tombl -e version=version pack.toml)"
+          eval "$(tombl -e version=version packsquash.toml)"
           echo "version=$version" >> $GITHUB_OUTPUT
 
           sha=`echo $GITHUB_SHA | cut -c 1-7`
