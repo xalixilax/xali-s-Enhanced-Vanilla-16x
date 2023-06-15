@@ -54,7 +54,7 @@ jobs:
           name: Optimized pack
 
       - name: Rename Optimized Pack
-        run: mv ${{ steps.info.outputs.output }} "${{ steps.info.outputs.package }}.zip"
+        run: mv ${{ steps.info.outputs.output }} "${{ steps.info.outputs.name }} ${{ steps.info.outputs.version }}.zip"
 
       - uses: actions/download-artifact@v2
         with:
