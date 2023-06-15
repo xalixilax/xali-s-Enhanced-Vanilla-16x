@@ -1,0 +1,105 @@
+name: Build optimized resource pack
+
+on: push
+
+jobs:
+  packsquash:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v3
+
+      - name: Download tombl
+        uses: robinraju/release-downloader@v1.8
+        with:
+          repository: snyball/tombl
+          fileName: '*.tar.gz'
+          latest: true
+
+      - name: Install tombl
+        run: |
+          mkdir bin
+          tar -zxvf tombl-*.tar.gz -C bin/
+          readonly tombl=$(find bin/ -type f -executable -print -quit)
+          echo "$(dirname $tombl)" >> $GITHUB_PATH
+
+      - name: Prepare environments
+        id: info
+        run: |
+          eval "$(tombl -e name=name pack.toml)"
+          echo "name=$name" >> $GITHUB_OUTPUT
+
+          eval "$(tombl -e version=version pack.toml)"
+          echo "version=$version" >> $GITHUB_OUTPUT
+
+          sha=`echo $GITHUB_SHA | cut -c 1-7`
+          echo "sha=$sha" >> $GITHUB_OUTPUT
+
+          package=${name}-${version}-rev.${sha}
+          echo "package=$package" >> $GITHUB_OUTPUT
+
+          mkdir build
+          eval "$(tombl -e output=output_file_path packsquash.toml)"
+          echo "output=$output" >> $GITHUB_OUTPUT
+
+      - name: Make Optimized Pack
+        uses: ComunidadAylas/PackSquash-action@master
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          options: packsquash.toml
+          packsquash_version: latest
+
+      - uses: geekyeggo/delete-artifact@v2
+        with:
+          name: Optimized pack
+
+      - name: Rename Optimized Pack
+        run: mv ${{ steps.info.outputs.output }} "${{ steps.info.outputs.package }}.zip"
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: ${{ steps.info.outputs.name }} v${{ steps.info.outputs.version }}
+          path: ${{ steps.info.outputs.package }}.zip
+
+      - name: Publish
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: Kir-Antipov/mc-publish@v3.2
+        with:
+          modrinth-id: Srw5RQ6k
+          modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
+          # curseforge-id: 513425
+          # curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
+          files-primary: ${{ steps.info.outputs.package }}.zip
+          name: ${{ steps.info.outputs.name }} v${{ steps.info.outputs.version }}
+          version: v${{ steps.info.outputs.version }}
+          version-type: release
+          changelog-file: CHANGELOG.md
+          game-versions: |
+            1.19.3
+            1.19.2
+            1.19.1
+            1.19
+            1.18.2
+            1.18.1
+            1.18
+            1.17.1
+            1.17
+            1.16.5
+            1.16.4
+            1.16.3
+            1.16.2
+            1.16.1
+            1.16
+            1.15.2
+            1.15.1
+            1.15
+            1.14.4
+            1.14.3
+            1.14.2
+            1.14.1
+            1.14
+            1.13.2
+            1.13.1
+            1.13
+          loaders: |
+            minecraft

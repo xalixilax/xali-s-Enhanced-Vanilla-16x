@@ -55,3 +55,6 @@ crashlytics-build.properties
 
 # Personnal PSD files
 /psd/
+
+# Packsquash build files
+/build
