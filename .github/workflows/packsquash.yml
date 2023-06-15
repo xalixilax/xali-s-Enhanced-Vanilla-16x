@@ -67,14 +67,15 @@ jobs:
         with:
           modrinth-id: Srw5RQ6k
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
-          # curseforge-id: 513425
-          # curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
+          curseforge-id: 513425
+          curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
           files-primary: ${{ steps.info.outputs.package }}.zip
           name: ${{ steps.info.outputs.name }} v${{ steps.info.outputs.version }}
           version: v${{ steps.info.outputs.version }}
           version-type: release
           changelog-file: CHANGELOG.md
           game-versions: |
+            1.20
             1.19.3
             1.19.2
             1.19.1
