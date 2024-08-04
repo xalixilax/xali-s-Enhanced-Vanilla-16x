@@ -12,3 +12,7 @@
 ## v1.11.1
 ### Fix
 - Removed CEM files that I added back by mistakes. Making many mobs having missing parts.
+
+## v1.11.2
+### Feature
+- Updated pack format for 1.21

@@ -1,6 +1,10 @@
 ﻿{
   "pack": {
-    "pack_format": 15,
-    "description": "§6By xalixilax\n§4Use Optifine for better result"
+    "pack_format": 34,
+    "description": "§6By xalixilax",
+    "supported_formats": {
+      "min_inclusive": 4,
+      "max_inclusive": 34
+    }
   }
 }

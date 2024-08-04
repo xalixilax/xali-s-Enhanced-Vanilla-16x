@@ -1,6 +1,6 @@
 name: Build optimized resource pack
 
-on: 
+on:
   push:
     branches:
       - main
@@ -17,7 +17,7 @@ jobs:
         uses: robinraju/release-downloader@v1.8
         with:
           repository: snyball/tombl
-          fileName: '*.tar.gz'
+          fileName: "*.tar.gz"
           latest: true
 
       - name: Install tombl
@@ -45,7 +45,7 @@ jobs:
           mkdir build
           eval "$(tombl -e output=output_file_path packsquash.toml)"
           echo "output=$output" >> $GITHUB_OUTPUT
-          
+
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
@@ -78,6 +78,13 @@ jobs:
           version-type: release
           changelog-file: CHANGELOG.md
           game-versions: |
+            1.21
+            1.20.6
+            1.20.5
+            1.20.4
+            1.20.3
+            1.20.2
+            1.20.1
             1.20
             1.19.3
             1.19.2

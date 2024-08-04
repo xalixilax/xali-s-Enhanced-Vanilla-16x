@@ -58,3 +58,4 @@ crashlytics-build.properties
 
 # Packsquash build files
 /build
+.DS_Store
