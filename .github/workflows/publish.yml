@@ -66,7 +66,7 @@ jobs:
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
           curseforge-id: 513425
           curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
-          files-primary: ${{ steps.info.outputs.package }}.zip
+          files: ${{ steps.info.outputs.package }}.zip
           name: ${{ steps.info.outputs.name }} v${{ steps.info.outputs.version }}
           version: v${{ steps.info.outputs.version }}
           version-type: release
