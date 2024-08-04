@@ -54,7 +54,7 @@ jobs:
 
       - name: Make Optimized Pack
         if: startsWith(github.ref, 'refs/tags/v')
-        uses: ComunidadAylas/PackSquash-action@master
+        uses: ComunidadAylas/PackSquash-action@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           options: packsquash.toml
