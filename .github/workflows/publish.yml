@@ -64,8 +64,8 @@ jobs:
         with:
           modrinth-id: Srw5RQ6k
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
-          curseforge-id: 513425
-          curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
+          # curseforge-id: 513425
+          # curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
           files: ${{ steps.info.outputs.package }}.zip
           name: ${{ steps.info.outputs.name }} v${{ steps.info.outputs.version }}
           version: v${{ steps.info.outputs.version }}
