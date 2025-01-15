@@ -9,3 +9,4 @@ allow_mods = ['OptiFine']
 validate_pack_metadata_file = true
 ignore_system_and_hidden_files = true
 never_store_squash_times = true
+downsize_if_single_color = false
