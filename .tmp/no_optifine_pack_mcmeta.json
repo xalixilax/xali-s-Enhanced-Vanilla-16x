@@ -1,0 +1,9 @@
+{
+  "file": "src/pack.mcmeta",
+  "pack_format": 34,
+  "supported_formats": {
+    "max_inclusive": 34,
+    "min_inclusive": 4
+  },
+  "uses_modern_min_max_format": false
+}

@@ -1,0 +1,34 @@
+No-OptiFine modernization audit
+
+pack.mcmeta uses modern min/max format: False
+pack.mcmeta pack_format: 34
+optifine file count: 1772
+vanilla-baseline stale identifier matches: 48
+optifine-only stale identifier matches: 118
+
+Vanilla baseline stale identifiers:
+- legacy_block_grass: 31
+- legacy_block_grass_path: 17
+
+OptiFine-only stale identifiers:
+- legacy_biome_giant_tree_taiga: 1
+- legacy_biome_giant_tree_taiga_hills: 1
+- legacy_biome_gravelly_mountains: 1
+- legacy_biome_jungle_hills: 1
+- legacy_biome_modified_gravelly_mountains: 1
+- legacy_biome_mountain_edge: 1
+- legacy_biome_mountains: 1
+- legacy_biome_mushroom_field_shore: 2
+- legacy_biome_snowy_tundra: 65
+- legacy_biome_swamp_hills: 1
+- legacy_biome_tall_birch_forest: 1
+- legacy_biome_tall_birch_hills: 1
+- legacy_biome_wooded_hills: 1
+- legacy_biome_wooded_mountains: 1
+- legacy_block_deepslate_old_ore: 2
+- legacy_block_grass: 2
+- legacy_block_grass_path: 35
+
+Interpretation:
+- If OptiFine content is removed or replaced, only the vanilla-baseline matches remain as required modernization work.
+- The optifine/ tree still contains most stale block and biome identifiers in this pack.
