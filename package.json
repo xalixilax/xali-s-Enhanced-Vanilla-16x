@@ -1,13 +1,13 @@
 {
-  "name": "xali-s-enhanced-vanilla-16x",
-  "private": true,
-  "scripts": {
-    "modernize:v2": "bun run scripts/modernize-v2.ts",
-    "modernize:v2:check": "bun run scripts/modernize-v2.ts --check"
-  },
-  "devDependencies": {
-    "@types/node": "^26.1.2",
-    "bun-types": "^1.3.14",
-    "typescript": "^7.0.2"
-  }
+    "name": "xali-s-enhanced-vanilla-16x",
+    "private": true,
+    "scripts": {
+        "modernize:v2": "bun run scripts/modernize-v2.ts",
+        "modernize:v2:check": "bun run scripts/modernize-v2.ts --check"
+    },
+    "devDependencies": {
+        "@types/node": "^26.1.2",
+        "bun-types": "^1.3.14",
+        "typescript": "^7.0.2"
+    }
 }
