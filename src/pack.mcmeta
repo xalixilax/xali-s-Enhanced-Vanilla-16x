@@ -1,7 +1,9 @@
 ﻿{
   "pack": {
-    "pack_format": 34,
     "description": "§6By xalixilax",
-    "supported_formats": [34, 64]
+    "pack_format": 34,
+    "supported_formats": {"min_inclusive": 34, "max_inclusive": 999},
+    "min_format": 34,
+    "max_format": 999
   }
 }
