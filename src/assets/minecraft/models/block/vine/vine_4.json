@@ -2,6 +2,7 @@
 	"credit": "Made with Blockbench",
 	"ambientocclusion": false,
 	"textures": {
+		"particle": "block/vine",
 		"3": "block/vine_overlay",
 		"4": "block/vine_0_overlay",
 		"5": "block/vine_1_overlay",

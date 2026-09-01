@@ -1,19 +1,19 @@
 {
     "variants": {
         "": [
-			{ "model": "block/short_short_grass/short_grass" },
-            { "model": "block/short_short_grass/short_grass_1" },
-            { "model": "block/short_short_grass/short_grass_2" },
-            { "model": "block/short_short_grass/short_grass_3" },
-            { "model": "block/short_short_grass/short_grass_4" },
-            { "model": "block/short_short_grass/short_grass_5" },
-            { "model": "block/short_short_grass/short_grass_6" },
-            { "model": "block/short_short_grass/short_grass_7" },
-            { "model": "block/short_short_grass/short_grass_8" },
-            { "model": "block/short_short_grass/short_grass_9" },
-            { "model": "block/short_short_grass/short_grass_10" },
-            { "model": "block/short_short_grass/short_grass_11" },
-            { "model": "block/short_short_grass/short_grass_12" }
+			{ "model": "block/short_grass/grass" },
+            { "model": "block/short_grass/grass_1" },
+            { "model": "block/short_grass/grass_2" },
+            { "model": "block/short_grass/grass_3" },
+            { "model": "block/short_grass/grass_4" },
+            { "model": "block/short_grass/grass_5" },
+            { "model": "block/short_grass/grass_6" },
+            { "model": "block/short_grass/grass_7" },
+            { "model": "block/short_grass/grass_8" },
+            { "model": "block/short_grass/grass_9" },
+            { "model": "block/short_grass/grass_10" },
+            { "model": "block/short_grass/grass_11" },
+            { "model": "block/short_grass/grass_12" }
         ]
     }
 }

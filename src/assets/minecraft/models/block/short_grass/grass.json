@@ -1,6 +1,6 @@
 {
     "parent": "block/tinted_cross_overlay",
     "textures": {
-        "cross": "block/short_short_grass/short_grass"
+        "cross": "block/short_grass/grass"
     }
 }

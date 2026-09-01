@@ -1,0 +1,17 @@
+{
+  "mode": "apply",
+  "removedPaths": [],
+  "renamedPaths": [],
+  "createdPaths": [],
+  "trapdoorFixed": [],
+  "modelFixed": [],
+  "changedTextFiles": [],
+  "summary": {
+    "removedCount": 0,
+    "renamedCount": 0,
+    "createdCount": 0,
+    "trapdoorFixedCount": 0,
+    "modelFixedCount": 0,
+    "changedTextFileCount": 0
+  }
+}

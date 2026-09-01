@@ -2,7 +2,6 @@
   "pack": {
     "pack_format": 34,
     "description": "§6By xalixilax",
-    "min_format": 4,
-    "max_format": 34
+    "supported_formats": [34, 64]
   }
 }
